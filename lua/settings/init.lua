@@ -31,4 +31,4 @@ require('autoclose')
 -- Luasnip
 map('n', '<S-Tab>', '<cmd>lua require("luasnip").jump(-1)<Cr>', {})
 map('n', '<Tab>', '<cmd>lua require("luasnip").jump(1)<Cr>', {})
-require('luasnip.loaders.from_vscode').lazy_load()
+require("feline").setup()

@@ -94,12 +94,6 @@ _G.packer_plugins = {
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/feline.nvim",
     url = "https://github.com/feline-nvim/feline.nvim"
   },
-  ["lspsaga.nvim"] = {
-    config = { "\27LJ\2\nA\0\0\4\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\1K\0\1\0\18init_lsp_saga\flspsaga\frequire\0" },
-    loaded = true,
-    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -119,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/nvim-lint",
     url = "https://github.com/mfussenegger/nvim-lint"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -145,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
@@ -155,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/tabby.nvim",
     url = "https://github.com/nanozuki/tabby.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -163,10 +172,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lspsaga.nvim
-time([[Config for lspsaga.nvim]], true)
-try_loadstring("\27LJ\2\nA\0\0\4\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\1K\0\1\0\18init_lsp_saga\flspsaga\frequire\0", "config", "lspsaga.nvim")
-time([[Config for lspsaga.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
