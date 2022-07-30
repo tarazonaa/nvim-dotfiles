@@ -20,17 +20,18 @@ return require('packer').startup(function()
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
     -- Lsp Config
     use 'neovim/nvim-lspconfig'
-    use 'williamboman/mason-lspconfig.nvim'
     -- Cmp
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-nvim-lua'
+    -- Luasnip and stuff
+    use 'L3MON4D3/LuaSnip'
+    use 'saadparwaiz1/cmp_luasnip'
+    -- Tools
     use 'nvim-lua/plenary.nvim'
     use 'nvim-lua/popup.nvim'
-    use 'hrsh7th/cmp-nvim-lua'
-    use 'williamboman/mason.nvim'
-    use 'mfussenegger/nvim-lint'
     use {
       'romgrk/barbar.nvim',
       requires = {'kyazdani42/nvim-web-devicons'}
