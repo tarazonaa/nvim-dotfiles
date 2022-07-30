@@ -8,4 +8,8 @@ require('treesitter-config')
 require('nvimtree-config')
 require('lualine-config')
 
+-- Globals
+require("globals")
+
+
 vim.cmd[[colorscheme duskfox]]
