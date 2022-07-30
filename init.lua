@@ -1,5 +1,6 @@
 require('settings')
 require('packer-config')
+require('mason-config')
 require('lsp-config')
 require('telescope-config')
 require('cmp-config')

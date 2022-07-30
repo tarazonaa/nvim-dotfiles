@@ -13,7 +13,6 @@ set.smartcase = true
 
 set.splitbelow = true
 set.splitright = true
-set.wrap = false
 set.scrolloff = 5
 set.fileencoding = 'utf-8'
 set.termguicolors = true
@@ -31,4 +30,9 @@ require('autoclose')
 -- Luasnip
 map('n', '<S-Tab>', '<cmd>lua require("luasnip").jump(-1)<Cr>', {})
 map('n', '<Tab>', '<cmd>lua require("luasnip").jump(1)<Cr>', {})
+map('n', '<C-h>', '<cmd>nohl<Cr>', {})
+
+-- Feline
 require("feline").setup()
+
+

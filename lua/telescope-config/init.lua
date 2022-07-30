@@ -16,5 +16,6 @@ require("telescope").setup{
 require('telescope').load_extension('fzf')
 vim.keymap.set('n', '<leader>en', '<cmd>Telescope find_files cwd=~/.config/nvim<Cr>', {})
 vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<Cr>', {})
-vim.keymap.set('n', '<leader>fc', '<cmd>Telescope current_buffer_fuzzy_find<Cr>', {})
+vim.keymap.set('n', '<leader>fc', '<cmd>Telescope current_buffer_fuzzy_find sorting_strategy=ascending<Cr>', {})
 vim.keymap.set('n', '<leader>ft', '<cmd>Telescope git_files<Cr>', {})
+

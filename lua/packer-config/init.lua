@@ -1,6 +1,8 @@
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'max-0406/autoclose.nvim'
+    -- Personal plugin
+    use '~/plugins/stackmap.nvim'
     use {
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -11,14 +13,23 @@ return require('packer').startup(function()
     use 'numToStr/Comment.nvim'
     use "EdenEast/nightfox.nvim"
     use "simrat39/rust-tools.nvim"
+    -- Copilot
     use "github/copilot.vim"
+    -- Telescope stuff
     use 'nvim-telescope/telescope.nvim'
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
-    use 'hrsh7th/cmp-nvim-lsp'
+    -- Lsp Config
     use 'neovim/nvim-lspconfig'
+    use 'williamboman/mason-lspconfig.nvim'
+    -- Cmp
     use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-lua/popup.nvim'
+    use 'hrsh7th/cmp-nvim-lua'
+    use 'williamboman/mason.nvim'
     use 'mfussenegger/nvim-lint'
     use {
       'romgrk/barbar.nvim',

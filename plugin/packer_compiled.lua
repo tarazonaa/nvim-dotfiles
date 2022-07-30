@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["autoclose.nvim"] = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
@@ -98,6 +103,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -153,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["stackmap.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/stackmap.nvim",
+    url = "/Users/tarazonaa/plugins/stackmap.nvim"
   },
   ["tabby.nvim"] = {
     loaded = true,
