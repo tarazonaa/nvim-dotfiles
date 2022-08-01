@@ -34,6 +34,7 @@ table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
 require'lspconfig'.sumneko_lua.setup {
+    capabilities = capabilities,
     cmd = {sumneko_binary_path, "-E", sumneko_root_path .. "/main.lua"};
     settings = {
         Lua = {
@@ -61,7 +62,8 @@ require'lspconfig'.sumneko_lua.setup {
         },
     },
     on_attach = on_attach,
-}-- Rust
+}
+-- Rust
 require('lspconfig')['rls'].setup{
     on_attach = on_attach,
     capabilities = capabilities,

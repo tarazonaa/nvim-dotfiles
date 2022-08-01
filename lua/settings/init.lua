@@ -35,4 +35,10 @@ map('n', '<C-h>', '<cmd>nohl<Cr>', {})
 -- Feline
 require("feline").setup()
 
+-- Transparent BG
+require('transparent').setup {
+    enable = true,
+}
 
+-- Snippet init
+vim.g.snippets = 'luasnip'

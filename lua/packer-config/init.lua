@@ -3,6 +3,7 @@ return require('packer').startup(function()
     use 'max-0406/autoclose.nvim'
     -- Personal plugin
     use '~/plugins/stackmap.nvim'
+    use 'xiyaowong/nvim-transparent'
     use {
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -29,6 +30,7 @@ return require('packer').startup(function()
     -- Luasnip and stuff
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
+    use 'onsails/lspkind.nvim'
     -- Tools
     use 'nvim-lua/plenary.nvim'
     use 'nvim-lua/popup.nvim'
