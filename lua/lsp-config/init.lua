@@ -64,7 +64,12 @@ require'lspconfig'.sumneko_lua.setup {
     on_attach = on_attach,
 }
 -- Rust
-require('lspconfig')['rls'].setup{
+require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,
     capabilities = capabilities,
+}
+
+return {
+    capabilities,
+    on_attach
 }

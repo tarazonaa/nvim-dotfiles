@@ -12,6 +12,9 @@ require('lualine-config')
 -- Globals
 require("globals")
 
+-- Copilot
+-- require("copilot")
+
 
 vim.cmd[[colorscheme duskfox]]
 
