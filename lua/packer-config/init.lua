@@ -19,6 +19,12 @@ return require('packer').startup(function()
     -- Telescope stuff
     use 'nvim-telescope/telescope.nvim'
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+    -- ASTRO
+    use 'wavded/vim-stylus'
+    use 'virchau13/tree-sitter-astro'
+    use 'wuelnerdotexe/vim-astro'
+    -- HTML
+    use "mattn/emmet-vim"
     -- Lsp Config
     use 'neovim/nvim-lspconfig'
     -- Cmp
@@ -40,4 +46,12 @@ return require('packer').startup(function()
     }
     use "nanozuki/tabby.nvim"
     use "feline-nvim/feline.nvim"
+    -- CPP 
+    use 'Badhi/nvim-treesitter-cpp-tools'
+
+    -- THEMES
+    use 'projekt0n/github-nvim-theme'
+    use 'ellisonleao/gruvbox.nvim'
+    -- Latex
+    use 'lervag/vimtex'
 end)

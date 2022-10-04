@@ -69,6 +69,27 @@ require('lspconfig')['rust_analyzer'].setup{
     capabilities = capabilities,
 }
 
+-- Python
+require('lspconfig')['pyright'].setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
+-- Astro
+require('lspconfig')['astro'].setup{
+    filetypes = {'astro'},
+}
+
+-- Go
+require('lspconfig')['gopls'].setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
+
+require('lspconfig')['texlab'].setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
+
 return {
     capabilities,
     on_attach
