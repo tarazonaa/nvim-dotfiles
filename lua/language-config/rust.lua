@@ -1,5 +1,6 @@
 local has_rust_tools, rust_tools = pcall(require, 'rust_tools')
 
+
 if not has_rust_tools then
 else
     local lsp = require'lspconfig'

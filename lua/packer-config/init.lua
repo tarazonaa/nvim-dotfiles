@@ -1,6 +1,6 @@
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    use 'max-0406/autoclose.nvim'
+    use 'm4xshen/autoclose.nvim'
     -- Personal plugin
     use '~/plugins/stackmap.nvim'
     use 'xiyaowong/nvim-transparent'

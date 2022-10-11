@@ -52,4 +52,7 @@ vim.g.snippets = 'luasnip'
 
 map('n', '<leader>pv', '<cmd>:Vex<CR>', {})
 map('n', '<leader>fr', '<cmd>:lua vim.lsp.buf.format()<CR>', {})
+map('n', '<leader>gd', '<cmd>:lua vim.lsp.buf.definition()<CR>', {})
 
+-- Autoclose
+require('autoclose')
