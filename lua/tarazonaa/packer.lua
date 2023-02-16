@@ -52,4 +52,12 @@ return require('packer').startup(function(use)
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")
 
+    use {
+      'MrcJkb/haskell-tools.nvim',
+    }
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
 end)

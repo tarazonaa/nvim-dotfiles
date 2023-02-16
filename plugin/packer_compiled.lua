@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["haskell-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/haskell-tools.nvim",
+    url = "https://github.com/MrcJkb/haskell-tools.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
