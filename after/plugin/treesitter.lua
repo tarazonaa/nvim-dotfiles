@@ -9,6 +9,12 @@ require'nvim-treesitter.configs'.setup {
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
   auto_install = true,
 
+  -- Rename Tags
+  autotag = {
+    enable = true,
+    filetypes = {"html", "xml"},
+  },
+
   highlight = {
     -- `false` will disable the whole extension
     enable = true,
