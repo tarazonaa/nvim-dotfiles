@@ -192,11 +192,6 @@ _G.packer_plugins = {
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
-  ["silicon.nvim"] = {
-    loaded = true,
-    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/silicon.nvim",
-    url = "https://github.com/krivahtoo/silicon.nvim"
-  },
   tabular = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/tabular",
