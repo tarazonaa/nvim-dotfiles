@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/haskell-tools.nvim",
     url = "https://github.com/MrcJkb/haskell-tools.nvim"
   },
+  ["live-server"] = {
+    loaded = true,
+    path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/live-server",
+    url = "https://github.com/manzeloth/live-server"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/tarazonaa/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",

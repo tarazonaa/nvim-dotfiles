@@ -7,6 +7,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- Live Server
+    use 'manzeloth/live-server'
+
     -- Autopairs
     use {
         "windwp/nvim-autopairs",

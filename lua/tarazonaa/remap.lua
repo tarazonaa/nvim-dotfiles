@@ -43,3 +43,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- MarkDown
 vim.keymap.set("n", "<leader>md", "<cmd>MarkdownPreview<CR>", { silent = true })
+
+-- Silicon Remaps 
+vim.keymap.set("v", "<leader>s", "<cmd>lua require('silicon').silicon()<CR>")
