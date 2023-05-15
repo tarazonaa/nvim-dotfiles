@@ -68,8 +68,22 @@ return require('packer').startup(function(use)
     use {
         'MrcJkb/haskell-tools.nvim',
     }
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
-        setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+        ft = { "markdown" },
+    })
     use 'godlygeek/tabular'
     use 'preservim/vim-markdown'
+
+    -- Installation of Starcoder in nvim
+    use {
+        'huggingface/hfcc.nvim',
+        config = function()
+            require('hfcc').setup({
+                -- cf Setup
+            })
+        end
+    }
 end)
