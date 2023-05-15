@@ -1,5 +1,5 @@
 local hfcc = require('hfcc')
-local api_key = require("api_keys").hfcc
+local api_key = require("after.plugin.api_keys").hfcc
 
 hfcc.setup({
     api_token = api_key,     -- cf Install paragraph
