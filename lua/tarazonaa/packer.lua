@@ -4,6 +4,12 @@
 -- vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
+    -- Lualina
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
