@@ -6,6 +6,9 @@
 return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
 
+    -- Prettier
+    use 'prettier/vim-prettier'
+
     -- Lualine
     use 'nvim-lualine/lualine.nvim'
 
