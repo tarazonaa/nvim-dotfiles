@@ -3,8 +3,12 @@
 -- Only required if you have packer configured as `opt`
 -- vim.cmd.packadd('packer.nvim')
 
+
 return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
+
+    -- Rust Tools
+    use 'simrat39/rust-tools.nvim'
 
     -- Prettier
     use 'prettier/vim-prettier'
@@ -18,10 +22,6 @@ return require('packer').startup(function(use)
     -- Live Server
     use 'manzeloth/live-server'
 
-    -- Autopairs
-    use {
-        "windwp/nvim-autopairs",
-    }
     -- Surround nvim
     use({
         "kylechui/nvim-surround",
@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
         'rose-pine/neovim',
         as = 'rose-pine',
         config = function()
-            vim.cmd('colorscheme rose-pine')
+            vim.cmd('colorscheme rose-pine-moon')
         end
     })
 
@@ -71,7 +71,16 @@ return require('packer').startup(function(use)
     }
 
     use("folke/zen-mode.nvim")
-    use("github/copilot.vim")
+
+    -- COpilot
+    use {
+        "zbirenbaum/copilot.lua",
+        cmd = "Copilot",
+        event = "InsertEnter",
+        config = function()
+            require("copilot").setup({})
+        end,
+    }
 
     use {
         'MrcJkb/haskell-tools.nvim',
@@ -84,14 +93,4 @@ return require('packer').startup(function(use)
     })
     use 'godlygeek/tabular'
     use 'preservim/vim-markdown'
-
-    -- Installation of Starcoder in nvim
-    use {
-        'huggingface/hfcc.nvim',
-        config = function()
-            require('hfcc').setup({
-                -- cf Setup
-            })
-        end
-    }
 end)
