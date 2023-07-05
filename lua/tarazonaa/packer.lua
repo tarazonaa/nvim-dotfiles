@@ -19,9 +19,6 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    -- Live Server
-    use 'manzeloth/live-server'
-
     -- Surround nvim
     use({
         "kylechui/nvim-surround",
@@ -34,6 +31,9 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+
+
+    use {'nyoom-engineering/oxocarbon.nvim'}
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
